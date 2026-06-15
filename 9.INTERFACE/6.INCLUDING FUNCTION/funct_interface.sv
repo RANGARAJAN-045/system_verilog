@@ -1,0 +1,37 @@
+//////// just an example for including the function 
+
+
+interface FA;
+
+  logic a,b,cin;
+
+  logic sum,carry;
+
+endinterface
+
+
+class transaction;
+
+  rand  bit a,b,cin;
+
+  bit       sum,carry;
+
+  
+
+  function void display(string name);
+
+    $display("\n|-----------------------------------------|");
+
+    $display("|         NAME=%0s            |",name);
+
+    $display("|-----------------------------------------|");
+
+    $display("|      A = %b ------ B=%b ------ CIN = %b    |",a,b,cin);
+
+    $display("|      SUM = %b || CARRY=%b                 |",sum,carry);
+
+    $display("|-----------------------------------------|\n");
+
+  endfunction
+
+endclass: transaction
